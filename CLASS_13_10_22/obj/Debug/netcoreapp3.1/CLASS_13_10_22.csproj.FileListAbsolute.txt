@@ -1,0 +1,14 @@
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\bin\Debug\netcoreapp3.1\CLASS_13_10_22.exe
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\bin\Debug\netcoreapp3.1\CLASS_13_10_22.deps.json
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\bin\Debug\netcoreapp3.1\CLASS_13_10_22.runtimeconfig.json
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\bin\Debug\netcoreapp3.1\CLASS_13_10_22.runtimeconfig.dev.json
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\bin\Debug\netcoreapp3.1\CLASS_13_10_22.dll
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\bin\Debug\netcoreapp3.1\CLASS_13_10_22.pdb
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\obj\Debug\netcoreapp3.1\CLASS_13_10_22.csproj.AssemblyReference.cache
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\obj\Debug\netcoreapp3.1\CLASS_13_10_22.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\obj\Debug\netcoreapp3.1\CLASS_13_10_22.AssemblyInfoInputs.cache
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\obj\Debug\netcoreapp3.1\CLASS_13_10_22.AssemblyInfo.cs
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\obj\Debug\netcoreapp3.1\CLASS_13_10_22.csproj.CoreCompileInputs.cache
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\obj\Debug\netcoreapp3.1\CLASS_13_10_22.dll
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\obj\Debug\netcoreapp3.1\CLASS_13_10_22.pdb
+D:\Tarea UNICDA\Cuatrimestre 4\Estructura de Datos\CLASS_13_10_22\CLASS_13_10_22\obj\Debug\netcoreapp3.1\CLASS_13_10_22.genruntimeconfig.cache
