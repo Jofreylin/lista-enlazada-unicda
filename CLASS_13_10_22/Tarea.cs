@@ -162,6 +162,8 @@ namespace CLASS_13_10_22
             Console.WriteLine("Seleccione una opción:");
             Console.WriteLine("1. Listar todo");
             Console.WriteLine("2. Buscar por genero");
+            Console.WriteLine("3. Buscar por nombre (Busqueda Secuencial)");
+            Console.WriteLine("4. Buscar por nombre (Busqueda Binaria)");
             Console.WriteLine("-----------------------------");
 
             int opcion = Int32.Parse(Console.ReadLine());
@@ -178,6 +180,14 @@ namespace CLASS_13_10_22
 
                 case 2:
                     BuscarMultimediaPorGenero();
+                    break;
+
+                case 3:
+                    BuscarMultimediaPorNombre_Secuencial();
+                    break;
+
+                case 4:
+                    BuscarMultimediaPorNombre_Binaria();
                     break;
 
                 default:
@@ -204,6 +214,42 @@ namespace CLASS_13_10_22
             MostrarListaPorGenero(lista.inicio,genero);
         }
 
+        private void BuscarMultimediaPorNombre_Secuencial()
+        {
+            Console.Clear();
+            Console.WriteLine("=============================");
+            Console.WriteLine("Buscar Multimedia (Secuencial)");
+            Console.WriteLine("=============================");
+            Console.Write("Introduzca el nombre:");
+
+            string nombre = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine("=============================");
+            Console.WriteLine($"Listado de Multimedia: {nombre}");
+            Console.WriteLine("=============================");
+
+            MostrarListaPorNombre_Secuencial(nombre);
+        }
+
+        private void BuscarMultimediaPorNombre_Binaria()
+        {
+            Console.Clear();
+            Console.WriteLine("=============================");
+            Console.WriteLine("Buscar Multimedia (Binaria)");
+            Console.WriteLine("=============================");
+            Console.Write("Introduzca el nombre:");
+
+            string nombre = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine("=============================");
+            Console.WriteLine($"Listado de Multimedia: {nombre}");
+            Console.WriteLine("=============================");
+
+            MostrarElementoPorNombre_Binaria(nombre);
+        }
+
         private void MostrarLista(Multimedia nodo)
         {
             
@@ -226,5 +272,51 @@ namespace CLASS_13_10_22
                 MostrarListaPorGenero(nodo.Siguiente, genero);
             }
         }
+
+        private void MostrarListaPorNombre_Secuencial( string nombre)
+        {
+
+            Multimedia[] nuevaLista = lista.ObtenerLista();
+
+            for(int i = 0; i < nuevaLista.Length; i++)
+            {
+                if (nuevaLista[i].Nombre.ToLower().Contains(nombre.ToLower()))
+                {
+                    Console.WriteLine($"{(i+1)} --- {nuevaLista[i].Tipo} -- {nuevaLista[i].Nombre} -- {nuevaLista[i].Genero} -- ${nuevaLista[i].Precio}");
+                }
+            }
+        }
+
+        private void MostrarElementoPorNombre_Binaria(string nombre)
+        {
+
+            Multimedia[] nuevaLista = lista.ObtenerLista();
+
+            int inferior = 0;
+            int centro = 0;
+            int superior = nuevaLista.Length - 1;
+
+            while(inferior <= superior)
+            {
+                centro = (superior + inferior) / 2;
+
+                int comparacion = nombre.ToLower().CompareTo(nuevaLista[centro].Nombre.ToLower());
+
+                if (comparacion == 0 || nuevaLista[centro].Nombre.ToLower().Contains(nombre.ToLower()))
+                {
+                    Console.WriteLine($"{(centro+1)} --- {nuevaLista[centro].Tipo} -- {nuevaLista[centro].Nombre} -- {nuevaLista[centro].Genero} -- ${nuevaLista[centro].Precio}");
+                    break;
+                }else if (comparacion > 0)
+                {
+                    superior = centro - 1;
+                }
+                else
+                {
+                    inferior = centro + 1;
+                }
+            }
+        }
+
+
     }
 }
